@@ -1,0 +1,65 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Chat Client</title>
+</head>
+<body>
+  <main class="container-fluid">
+    <div class="row first-row">
+      <section class="col-sm-8" id="chats">
+
+        <div class="row chat-header primary-dark">
+          <div class="col-sm-12 welcome">
+            
+          </div>
+        </div>
+
+        <div class="row primary" id="chat-messages">
+          <div class="col-sm-12">
+            <ul class="chat-message-list">
+            </ul>
+          </div>
+        </div>
+
+        <div class="row chat-input primary-dark">
+          <div class="col-sm-8">
+            <input class="input"  type="text" placeholder="messages">
+          </div>
+          <div class="col-sm-4">
+            <button class="btn btn-lrg accent button">Send Message</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-8">
+            <form>
+              <input id="username-input"  type="text" placeholder="input your name">
+              <input id="avatar-input" type="url" placeholder="Add Image File(.png, .jpeg, .jpg, .gif)">
+            </form>
+          </div>
+          <div class="col-sm-4">
+            <button id="addUser" class="btn btn-lrg">Add User</button>
+          </div>  
+        </div>
+
+      </section>
+
+      <section class="col-sm-4 accent" id="users">
+        
+        <div class="row user-header">
+          <div class="col-sm-12"></div>
+        </div>
+
+        <div class="row user-check">
+          <div class="col-sm-12"></div>
+        </div>
+
+      </section>
+    </div>
+  </main>
+</body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="app.js"></script>
+</html>
